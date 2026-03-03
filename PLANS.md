@@ -37,3 +37,5 @@ The milestone is complete when:
   - Start app
   - Run tests
   - Stop services
+
+All work must follow AGENTS.md conventions and Definition of Done.
