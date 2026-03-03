@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: software_factory_db
+    environment:
+      POSTGRES_DB: software_factory
+      POSTGRES_USER: sf
+      POSTGRES_PASSWORD: sf_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - sf_pgdata:/var/lib/postgresql/data
+
+volumes:
+  sf_pgdata:
